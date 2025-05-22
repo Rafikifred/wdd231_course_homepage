@@ -1,0 +1,64 @@
+/* Large screen styles */
+
+@media screen and (min-width: 640px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .header-container {
+    flex: 1;
+  }
+
+  nav {
+    display: flex !important;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #courseContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .course-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+  }
+
+  .filter-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+}
